@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "tools.h"
 
 int main(void) {
@@ -25,5 +24,7 @@ int main(void) {
 					printf("Invalid Option");
 			
 		}
+
+		system("cls");
 	}
 }

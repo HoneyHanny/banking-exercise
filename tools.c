@@ -88,7 +88,7 @@ void EnterPassword() {
 		character = getch();
 		if (character == BACKSPACE) {
 			if (len != 0) {
-				printf(ERASE);
+				printf(ERASE); // destructive backspace
 				password[len] = '\0';
 				len--;
 			}
@@ -111,7 +111,7 @@ void UserRegistration() {
 }
 
 void UserLogin() {
-
+	
 }
 
 // Employee
