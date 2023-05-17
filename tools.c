@@ -3,14 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-// Tools
+// TOOLS
 
 char* MallocString(char* str) {
-	return (char*)malloc(sizeof(char) * (strlen(str) + 1);
+	return (char*)malloc(sizeof(char) * (strlen(str) + 1));
 }
 
-// Main Menu
+// MAIN MENU
 
 void DisplayMainMenu() {
 	printf("BANKING MANAGEMENT SYSTEM\n");
@@ -20,7 +19,7 @@ void DisplayMainMenu() {
 }
 
 // since main menu has 3 options pass in 3 as argument
-inline char ChooseFromMainMenu() {
+char ChooseFromMainMenu() {
 	return ChooseOption(3);
 }
 
@@ -42,7 +41,7 @@ char ChooseOption(int count) {
 	return optionChar;
 }
 
-// Registration and Login
+// REGISTRATION AND LOGIN
 
 // malloc string to return
 // since u cannot return a char array
@@ -92,7 +91,7 @@ void UserLogin() {
 	
 }
 
-// Employee
+// EMPLOYEE
 
 void Employee() {
 	EmployeeRegistration();
@@ -119,7 +118,7 @@ void LoanManagement() {
 
 }
 
-// Customers
+// CUSTOMERS
 
 void Customer() {
 
@@ -141,7 +140,7 @@ void ApplyForLoan() {
 
 }
 
-// Exit
+// EXIT
 
 void GoToMainMenu() {
 

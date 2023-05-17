@@ -24,22 +24,22 @@ typedef struct {
 	char password[MAX];
 } Account;
 
-// Tools
+// TOOLS
 
 char* MallocString(char* str);
 
-// Main Menu
+// MAIN MENU
 
 void DisplayMainMenu();
 char ChooseFromMainMenu();
 char ChooseOption(int count);
 
-// Registration and Login
+// REGISTRATION AND LOGIN
 
 void UserRegistration();
 void UserLogin();
 
-// Employee
+// EMPLOYEE
 
 void Employee();
 void AccountManagement();
@@ -47,7 +47,7 @@ void TransactionHistory();
 void TransferMoney();
 void LoanManagement();
 
-// Customers
+// CUSTOMERS
 
 void Customers();
 void ViewAccountDetails();
@@ -55,7 +55,7 @@ void AccountBalance();
 void Payment();
 void ApplyForLoan();
 
-// Exit
+// EXIT
 
 void GoToMainMenu();
 void ExitApplication();
