@@ -6,8 +6,8 @@
 #define ENTER "\n"
 #define BACKSPACE "\b"
 #define ERASE "\b \b"
+#define MAX 100
 
-#define MAX 100;
 typedef struct {
 	char fullName[MAX];
 	int age;
