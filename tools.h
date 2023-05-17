@@ -36,12 +36,14 @@ char ChooseOption(int count);
 
 // REGISTRATION AND LOGIN
 
-void UserRegistration();
-void UserLogin();
+char* EnterUsername();
+char* EnterPassword();
 
 // EMPLOYEE
 
-void Employee();
+void EmployeeSection();
+void EmployeeRegistration();
+void EmployeeLogin();
 void AccountManagement();
 void TransactionHistory();
 void TransferMoney();
@@ -49,7 +51,7 @@ void LoanManagement();
 
 // CUSTOMERS
 
-void Customers();
+void CustomerSection();
 void ViewAccountDetails();
 void AccountBalance();
 void Payment();

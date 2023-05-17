@@ -1,4 +1,5 @@
 #include "tools.h"
+#include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -56,7 +57,7 @@ char* EnterUsername() {
 // if user press `backspace` it will erase the previous char unless `len` = 0
 // if user press `enter` it will add a `\n` (newline character) to the string and exit loop
 // if user press any other keys it will print `*` and add the char to the string
-void EnterPassword() {
+char* EnterPassword() {
 	printf("Enter password: ");
 	char password[MAX];
 	char character;
@@ -71,7 +72,7 @@ void EnterPassword() {
 			}
 		} else if (character == ENTER) {
 			printf(ENTER);
-			pasword[len] = ENTER;
+			password[len] = ENTER;
 			len++;	
 		} else {
 			printf('*');
@@ -82,24 +83,15 @@ void EnterPassword() {
 	return MallocString(password);
 }
 
-void UserRegistration() {
-	EnterUsername();
-	EnterPassword();
-}
-
-void UserLogin() {
-	
-}
-
 // EMPLOYEE
 
-void Employee() {
+void EmployeeSection() {
 	EmployeeRegistration();
 
 }
 
 void EmployeeRegistration() {
-	UserRegistration();
+	
 }
 
 void AccountManagement() {
@@ -120,7 +112,7 @@ void LoanManagement() {
 
 // CUSTOMERS
 
-void Customer() {
+void CustomerSection() {
 
 }
 

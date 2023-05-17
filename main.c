@@ -10,11 +10,11 @@ int main(void) {
 		system("cls");
 		switch (userOption) {
 			case '1': // Employee
-					Employee();
+					EmployeeSection();
 					break;
 
 			case '2': // Customer
-					Customer();
+					CustomerSection();
 					break;
 
 			case '3': // Exit
