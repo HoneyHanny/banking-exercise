@@ -53,7 +53,7 @@ char ChooseOption(int count) {
 		optionChar = getch();
 		optionInt = optionChar - '0';
 
-	} while (optionInt <= count && optionInt > 0);
+	} while (optionInt > count && optionInt < 1);
 
 	return optionChar;
 }
