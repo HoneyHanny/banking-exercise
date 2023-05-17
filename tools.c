@@ -3,28 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define ENTER "\n"
-#define BACKSPACE "\b"
-#define ERASE "\b \b"
-#define MAX 100
-
-typedef struct {
-	char fullName[MAX];
-	int age;
-	char gender;
-	char address;
-	char occupation[MAX];
-	char nationality[MAX];
-	int height;
-	int weight;
-	int status;
-} Employee;
-
-typedef struct {
-	Employee employee;
-	char username[MAX];
-	char password[MAX];
-} Account;
 
 // Tools
 
@@ -36,9 +14,9 @@ char* MallocString(char* str) {
 
 void DisplayMainMenu() {
 	printf("BANKING MANAGEMENT SYSTEM\n");
-	printf("[1] Employee");
-	printf("[2] Customer");
-	printf("[3] Exit");
+	printf("[1] Employee\n");
+	printf("[2] Customer\n");
+	printf("[3] Exit\n");
 }
 
 // since main menu has 3 options pass in 3 as argument
